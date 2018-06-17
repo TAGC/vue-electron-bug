@@ -10,18 +10,15 @@
     "serve:electron": "vue-cli-service serve:electron"
   },
   "dependencies": {
-    "source-map-support": "^0.5.4",
-    "vue": "^2.5.16",
-    "lib": "file:../lib"
+    "lib": "file:../lib",
+    "vue": "^2.5.16"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.2",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.2",
     "@vue/cli-service": "^3.0.0-rc.2",
     "electron": "^2.0.2",
-    "electron-builder": "^20.14.7",
-    "electron-webpack": "^2.1.2",
-    "vue-cli-plugin-electron-builder": "^0.3.2",
+    "vue-cli-plugin-electron-builder": "^1.0.0-alpha.2",
     "vue-template-compiler": "^2.5.16"
   },
   "eslintConfig": {
@@ -48,23 +45,5 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "electronWebpack": {
-    "renderer": {
-      "sourceDirectory": "src",
-      "webpackConfig": "dist_electron/webpack.renderer.additions.js"
-    },
-    "main": {
-      "webpackConfig": "dist_electron/webpack.main.additions.js"
-    }
-  },
-  "build": {
-    "directories": {
-      "output": "dist_electron"
-    },
-    "files": [
-      "dist/**/*",
-      "node_modules/**/*",
-      "package.json"
-    ]
-  }
+  "main": "dist_electron/bundled/background.js"
 }
