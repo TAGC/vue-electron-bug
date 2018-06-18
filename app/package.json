@@ -18,7 +18,7 @@
     "@vue/cli-plugin-eslint": "^3.0.0-rc.2",
     "@vue/cli-service": "^3.0.0-rc.2",
     "electron": "^2.0.2",
-    "vue-cli-plugin-electron-builder": "^1.0.0-alpha.2",
+    "vue-cli-plugin-electron-builder": "^1.0.0-alpha.4",
     "vue-template-compiler": "^2.5.16"
   },
   "eslintConfig": {
